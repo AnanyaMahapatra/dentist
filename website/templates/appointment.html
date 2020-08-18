@@ -1,0 +1,50 @@
+
+
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Contact {% endblock %}
+{% block meta_description %} Dentist Ananya Appointmnet {% endblock %}
+{% block content %}
+
+
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/12.jpg' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Appointmnet</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Appointmnet</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+ <!--  <h1>Hello Appointmnet</h1> -->
+<center>
+	<h3>Review ur info</h3>
+	<p> {{ your_name }} </p>
+	<p> {{ your_phone }} </p>
+	<p> {{ your_email }} </p>
+	<p> {{ your_address }} </p>
+	<p> {{ your_schedule }} </p>
+	<p> {{ your_date }} </p>
+	<p> {{ your_message }} </p>
+	<h2> {{ appointment_Details }} </h2>
+</center>
+
+  <!-- ***** Contact Area End ***** -->
+
+ {% endblock %}
